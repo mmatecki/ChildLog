@@ -9,3 +9,6 @@ resources.ap_
 .settings/
 project.properties
 proguard.cfg
+*.ipr
+*.iws
+*.iml
