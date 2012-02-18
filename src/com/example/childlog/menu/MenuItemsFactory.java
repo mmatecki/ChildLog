@@ -1,6 +1,7 @@
 package com.example.childlog.menu;
 
 import com.example.childlog.R;
+import com.example.childlog.events.FoodActivity;
 
 public class MenuItemsFactory {
 	private static final Integer[] iconsIds = {
@@ -24,7 +25,7 @@ public class MenuItemsFactory {
 		null,
 		null,
 		null,
-		null
+		FoodActivity.class
 	};
 
 	public static MainMenuItem[] getItems() {

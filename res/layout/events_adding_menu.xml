@@ -7,8 +7,14 @@
     <GridView
         android:id="@+id/gvEventsAdding_menu"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:numColumns="2" >
+        android:layout_height="fill_parent"
+        android:background="@android:color/background_dark"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:padding="10dp"
+        android:verticalSpacing="10dp" >
     </GridView>
 
 </LinearLayout>
