@@ -41,7 +41,7 @@ public class EventsListAdapter extends BaseAdapter {
 		
 		if (convertView == null) {
 			view = LayoutInflater.from(context).inflate(
-					R.layout.events_adding_menu_item, null);
+					R.layout.events_list_item, null);
 		}
 		
 		eventName = (TextView) view.findViewById(R.id.tvEventsList_Name);
@@ -49,7 +49,7 @@ public class EventsListAdapter extends BaseAdapter {
 		
 		eventName.setText(eventsList[position].getEventType().toString());
 		eventDate.setText(eventsList[position].getEventTime().toString());
-		return null;
+		return view;
 	}
 
 }
