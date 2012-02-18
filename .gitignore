@@ -1,0 +1,11 @@
+*.apk
+gen/
+apk/
+bin/
+*.dex
+resources.ap_
+.classpath
+.project
+.settings/
+project.properties
+proguard.cfg
