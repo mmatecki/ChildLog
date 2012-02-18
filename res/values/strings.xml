@@ -3,5 +3,10 @@
 
     <string name="hello">Hello World, ChildLogActivity!</string>
     <string name="app_name">ChildLog</string>
+    <string name="menu_sleep">Sleep</string>
+    <string name="menu_wake_up">Wake up</string>
+    <string name="menu_diaper">Diaper</string>
+    <string name="menu_bath">Bath</string>
+    <string name="menu_food">Food</string>
 
 </resources>
