@@ -7,9 +7,20 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.example.childlog.db.ChildEvent;
+import com.example.childlog.db.EventsDataSource;
+
 public class EventsListAdapter extends BaseAdapter {
 	private Context context;
-	private Event[] eventsList;
+	private ChildEvent[] eventsList = {};
+	
+	public EventsListAdapter(Context context){
+		this.context = context;
+		EventsDataSource db = new EventsDataSource(context);
+		db.open();
+		eventsList = db.getAllEvents().toArray(eventsList);
+		db.close();
+	}
 
 	public int getCount() {
 		return eventsList.length;
@@ -37,7 +48,7 @@ public class EventsListAdapter extends BaseAdapter {
 		eventDate = (TextView) view.findViewById(R.id.tvEventsList_Date);
 		
 		eventName.setText(eventsList[position].getEventType().toString());
-		eventDate.setText(eventsList[position].getDateAdd().toString());
+		eventDate.setText(eventsList[position].getEventTime().toString());
 		return null;
 	}
 
