@@ -8,7 +8,7 @@
 
     <application
         android:icon="@drawable/app_icon"
-        android:label="@string/app_name" android:allowTaskReparenting="false">
+        android:label="@string/app_name">
         <activity
             android:label="@string/app_name"
             android:name=".ChildLogActivity" >
@@ -22,5 +22,4 @@
         <activity android:name=".EventsListActivity"></activity>
         <activity android:name=".events.FoodActivity"></activity>
     </application>
-
 </manifest>

@@ -1,4 +1,4 @@
-package com.example.childlog;
+package com.example.childlog.model;
 
 import java.io.Serializable;
 import java.sql.Timestamp;

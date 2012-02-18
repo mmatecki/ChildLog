@@ -39,7 +39,13 @@
                 android:layout_y="200px"
 
                 />
+        <TextView android:id="@+id/tvTip"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Wybierz pierś z której karmisz"
+                  android:layout_gravity="bottom"/>
     </LinearLayout>
+
 
 
 
