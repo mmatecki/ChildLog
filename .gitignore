@@ -12,3 +12,4 @@ proguard.cfg
 *.ipr
 *.iws
 *.iml
+out
