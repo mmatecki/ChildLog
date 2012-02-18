@@ -1,53 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_centerVertical="true">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerVertical="true" >
 
     <ImageView
-            android:id="@+id/main_image"
-            android:src="@drawable/main"
-            android:layout_width="wrap_content"
+        android:id="@+id/main_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:weightSum="1.0" >
+
+        <Button
+            android:id="@+id/bLewa"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.4"
+            android:layout_x="300px"
+            android:layout_y="200px"
+            android:background="@android:color/transparent"
+            android:text=""
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/bPrawa"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.4"
+            android:layout_x="300px"
+            android:layout_y="200px"
+            android:background="@android:color/transparent"
+            android:text=""
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tvTip"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
-            android:layout_gravity="center"
-            />
-
-    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true"
-                  android:weightSum="1.0">
-        <Button
-                android:id="@+id/bLewa"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:text=""
-                android:layout_weight="0.5"
-                android:background="@android:color/transparent"
-                android:layout_x="300px"
-                android:layout_y="200px"
-                android:textColor="@android:color/white"
-                />
-
-        <Button
-                android:textColor="@android:color/white"
-                android:id="@+id/bPrawa"
-                android:layout_weight="0.5"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="@android:color/transparent"
-                android:text=""
-                android:layout_x="300px"
-                android:layout_y="200px"
-
-                />
-        <TextView android:id="@+id/tvTip"
-                  android:layout_width="fill_parent"
-                  android:layout_height="wrap_content"
-                  android:text="Wybierz pierś z której karmisz"
-                  android:layout_gravity="bottom"/>
+            android:layout_gravity="bottom"
+            android:text="Wybierz pierś z której karmisz" />
     </LinearLayout>
-
-
-
-
 
 </RelativeLayout>
