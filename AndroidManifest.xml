@@ -20,6 +20,7 @@
         </activity>
         <activity android:name=".EventsAddingActivity"></activity>
         <activity android:name=".EventsListActivity"></activity>
+        <activity android:name=".events.FoodActivity"></activity>
     </application>
 
 </manifest>
