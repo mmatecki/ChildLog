@@ -2,6 +2,7 @@ package com.example.childlog;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -28,14 +29,18 @@ public class EventsAddingActivity extends Activity {
 		gridView.setAdapter(new MenuListAdapter(context, menuItems));
 		gridView.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-				onClickButton();
+				onClickButton(position);
 			}
 		});
 	}
 	
 	/** draft **/
-	private void onClickButton(){
-		// do nothing
+	private void onClickButton(int position){
+		Class<?> activityClass = menuItems[position].getActivityClass();
+		if (activityClass != null) {
+			Intent intent = new Intent(context, activityClass);
+			startActivity(intent);
+		}
 	}
 
 }
