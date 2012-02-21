@@ -1,5 +1,6 @@
 package com.example.childlog.db;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -68,7 +69,7 @@ public class EventsDataSource {
 		private ChildEvent cursorToEvent(Cursor cursor) {
 			ChildEvent event = new ChildEvent();
 			event.setId(cursor.getLong(0));
-			event.setEventTime(cursor.getLong(1));
+			event.setEventTime(new Timestamp(cursor.getLong(1)));
 			event.setEventType(cursor.getString(2));
 			return event;
 		}	
