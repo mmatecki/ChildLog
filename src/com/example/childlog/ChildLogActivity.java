@@ -20,14 +20,14 @@ public class ChildLogActivity extends TabActivity {
 		intent = new Intent(this, EventsAddingActivity.class);
 		spec = tabHost
 				.newTabSpec("events_adding")
-				.setIndicator("Events Adding",res.getDrawable(android.R.drawable.ic_menu_add))
+				.setIndicator(getString(R.string.events_tab_adding),res.getDrawable(android.R.drawable.ic_menu_add))
 				.setContent(intent);
 		tabHost.addTab(spec);
 		
 		intent = new Intent(this, EventsListActivity.class);
 		spec = tabHost
 				.newTabSpec("events_list")
-				.setIndicator("Events List",res.getDrawable(android.R.drawable.ic_menu_agenda))
+				.setIndicator(getString(R.string.events_tab_list),res.getDrawable(android.R.drawable.ic_menu_agenda))
 				.setContent(intent);
 		tabHost.addTab(spec);
 	}

@@ -45,7 +45,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:text="Wybierz pierś z której karmisz" />
+            android:text="@string/food_choose_breast" />
     </LinearLayout>
 
 </RelativeLayout>
