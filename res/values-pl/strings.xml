@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ChildLog</string>
+    <string name="events_tab_adding">Dodawanie Zdarzeń</string>
+    <string name="events_tab_list">Lista Zdarzeń</string>
+    <string name="food_choose_breast">Wybierz pierś z której karmisz</string>
+    <string name="menu_sleep">Sen</string>
+    <string name="menu_wake_up">Pobudka</string>
+    <string name="menu_diaper">Przewijanie</string>
+    <string name="menu_bath">Kąpiel</string>
+    <string name="menu_food">Jedzenie</string>
+    <string name="message_event_deleted_with_id">"Zdarzenie usunięto z id: "</string>
+
+</resources>
