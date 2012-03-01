@@ -9,6 +9,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import com.example.childlog.R;
 
 public class EventsDataSource {
 
@@ -46,7 +47,7 @@ public class EventsDataSource {
 
 		public void deleteEvent(ChildEvent event) {
 			long id = event.getId();
-			System.out.println("Event deleted with id: " + id);
+			System.out.println(R.string.message_event_deleted_with_id + id);
 			database.delete(ChildLogDbHelper.TABLE_EVENTS, ChildLogDbHelper.COLUMN_ID
 					+ " = " + id, null);
 		}

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Hello World, ChildLogActivity!</string>
     <string name="app_name">ChildLog</string>
+    <string name="events_tab_adding">Events Adding</string>
+    <string name="events_tab_list">Events List</string>
+    <string name="food_choose_breast">Choose breast</string>
     <string name="menu_sleep">Sleep</string>
     <string name="menu_wake_up">Wake up</string>
     <string name="menu_diaper">Diaper</string>
     <string name="menu_bath">Bath</string>
     <string name="menu_food">Food</string>
+    <string name="message_event_deleted_with_id">"Event deleted with id: "</string>
 
 </resources>
